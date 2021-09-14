@@ -1,7 +1,14 @@
+
+
 @charset "UTF-8";
 section {
   background-color: #ffffff;
 }
+
+.card-wrapper {
+  padding: 1rem;
+}
+
 
 body {
   font-style: normal;
