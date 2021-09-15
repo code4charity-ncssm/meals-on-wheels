@@ -65,7 +65,7 @@ function create46Chart() {
 
 function typeHealth() {
     new TypeIt("#healthType", {
-        speed: 100,
+        speed: 20,
         cursor: false,
     })
         .go();
