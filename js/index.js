@@ -137,6 +137,43 @@ function create30Chart() {
 }
 
 
+function createPetChart() {
+    const q46Chart = document.getElementById('pet');
+
+    const q46Data = {
+        labels: ["Dog", "Cat", "Other"],
+        datasets: [{
+            label: 'TITLE',
+            data: [36, 27, 5],
+            minBarLength: 100,
+            backgroundColor: [
+                'rgba(255, 99, 132)',
+                'rgba(255, 159, 64)',
+                '#00b7c4'
+            ]
+        }]
+    };
+
+    let plugin = {
+        legend: {
+            reverse: true
+        },
+    }
+
+    const q46Config = {
+        type: 'bar',
+        data: q46Data,
+        options: {
+            indexAxis: 'y',
+        },
+        plugins: [plugin]
+    };
+
+    const myChart = new Chart(q46Chart, q46Config);
+    return myChart;
+}
+
+createPetChart();
 create32Chart();
 create46Chart();
 create30Chart();
