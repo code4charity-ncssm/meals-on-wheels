@@ -1,6 +1,6 @@
 {
   "settings": {
-    "name": "Site-09-08_1708",
+    "name": "Meals on Wheels Data",
     "currentPage": "index.html",
     "theme": {
       "name": "mobirise5",
@@ -46,7 +46,15 @@
     "uniqCompNum": 17,
     "versionPublish": "5.4.1",
     "imageResize": true,
-    "screenshot": "screenshot.png"
+    "screenshot": "screenshot.png",
+    "favicon": "@PROJECT_PATH@/assets/images/mow-durham-rgb-128x71_1.png",
+    "mbrsiteDomain": "1p1ffyjlnv",
+    "robotsSwitcher": false,
+    "sitemapSwitcher": false,
+    "sitemapSwitcherAuto": false,
+    "siteUrl": false,
+    "cookiesAlert": false,
+    "gdpr": false
   },
   "pages": {
     "index.html": {
