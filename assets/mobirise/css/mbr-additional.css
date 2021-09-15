@@ -1030,7 +1030,8 @@ a {
   }
 }
 .cid-sIsoYi5ml2 {
-  background-image: url("../../../assets/images/mbr-1-1920x1280.jpeg");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../../assets/images/cover.png") no-repeat center center;
+  background-size: cover;
 }
 .cid-sIsoYi5ml2 .social-row .soc-item {
   display: inline-block;
