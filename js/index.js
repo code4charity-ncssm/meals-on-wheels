@@ -72,9 +72,76 @@ function typeHealth() {
 
 }
 
+function create29Chart() {
+    const q29Chart = document.getElementById("q29");
+
+
+    const data = {
+        labels: [
+            'Yes',
+            'No',
+        ],
+        datasets: [{
+            data: [86, 158],
+            backgroundColor: [
+                '#abd037',
+                '#edc819',
+            ],
+            hoverOffset: 4
+        }]
+    };
+
+
+    const q29Config = {
+        type: 'doughnut',
+        data: data,
+    };
+
+
+    const myChart = new Chart(q29Chart, q29Config);
+    return myChart;
+
+}
+
+
+function create30Chart() {
+    const q29Chart = document.getElementById("q30");
+
+
+    const data = {
+        labels: [
+            'Yes',
+            'No',
+        ],
+        datasets: [{
+            label: 'My First Dataset',
+            data: [119, 65],
+            backgroundColor: [
+                '#abd037',
+                '#e6e7e8',
+            ],
+            hoverOffset: 4
+        }]
+    };
+
+
+    const q29Config = {
+        type: 'doughnut',
+        data: data,
+    };
+
+
+    const myChart = new Chart(q29Chart, q29Config);
+    return myChart;
+
+}
+
+
 create32Chart();
 create46Chart();
+create30Chart();
 typeHealth();
+create29Chart();
 
 
 
