@@ -104,7 +104,7 @@ function create29Chart() {
 }
 
 function create30Chart() {
-    const q29Chart = document.getElementById("q30");
+    const q30Chart = document.getElementById("q30");
 
 
     const data = {
@@ -124,22 +124,22 @@ function create30Chart() {
     };
 
 
-    const q29Config = {
+    const q30Config = {
         type: 'doughnut',
         data: data,
     };
 
 
-    const myChart = new Chart(q29Chart, q29Config);
+    const myChart = new Chart(q30Chart, q30Config);
     return myChart;
 
 }
 
 
 function createPetChart() {
-    const q46Chart = document.getElementById('pet');
+    const petChart = document.getElementById('pet');
 
-    const q46Data = {
+    const petData = {
         labels: ["Dog", "Cat", "Other"],
         datasets: [{
             label: 'Pets',
@@ -159,21 +159,21 @@ function createPetChart() {
         },
     }
 
-    const q46Config = {
+    const petConfig = {
         type: 'bar',
-        data: q46Data,
+        data: petData,
         options: {
             indexAxis: 'y',
         },
         plugins: [plugin]
     };
 
-    const myChart = new Chart(q46Chart, q46Config);
+    const myChart = new Chart(petChart, petConfig);
     return myChart;
 }
 
 function create10Chart() {
-    const q29Chart = document.getElementById("q10-12");
+    const q10Chart = document.getElementById("q10-12");
 
 
     const data = {
@@ -183,7 +183,7 @@ function create10Chart() {
         ],
         datasets: [{
             label: 'My First Dataset',
-            data: [94.55, 5.45],
+            data: [243, 14],
             backgroundColor: [
                 '#abd037',
                 '#e6e7e8',
@@ -193,19 +193,19 @@ function create10Chart() {
     };
 
 
-    const q29Config = {
+    const q10Config = {
         type: 'doughnut',
         data: data,
     };
 
 
-    const myChart = new Chart(q29Chart, q29Config);
+    const myChart = new Chart(q10Chart, q10Config);
     return myChart;
 
 }
 
 function create3Chart() {
-    const q29Chart = document.getElementById("q3");
+    const q3Chart = document.getElementById("q3");
 
 
     const data = {
@@ -225,19 +225,19 @@ function create3Chart() {
     };
 
 
-    const q29Config = {
+    const q3Config = {
         type: 'doughnut',
         data: data,
     };
 
 
-    const myChart = new Chart(q29Chart, q29Config);
+    const myChart = new Chart(q3Chart, q3Config);
     return myChart;
 
 }
 
 function create7Chart() {
-    const q29Chart = document.getElementById("q7");
+    const q7Chart = document.getElementById("q7");
 
 
     const data = {
@@ -257,20 +257,20 @@ function create7Chart() {
     };
 
 
-    const q29Config = {
+    const q7Config = {
         type: 'doughnut',
         data: data,
     };
 
 
-    const myChart = new Chart(q29Chart, q29Config);
+    const myChart = new Chart(q7Chart, q7Config);
     return myChart;
 
 }
 
 
 function create17Chart() {
-    const q29Chart = document.getElementById("q17");
+    const q17Chart = document.getElementById("q17");
 
     const data = {
         labels: [
@@ -279,7 +279,7 @@ function create17Chart() {
         ],
         datasets: [{
             label: 'My First Dataset',
-            data: [99.61, 0.39],
+            data: [256, 1],
             backgroundColor: [
                 '#abd037',
                 '#e6e7e8',
@@ -289,13 +289,13 @@ function create17Chart() {
     };
 
 
-    const q29Config = {
+    const q17Config = {
         type: 'doughnut',
         data: data,
     };
 
 
-    const myChart = new Chart(q29Chart, q29Config);
+    const myChart = new Chart(q17Chart, q17Config);
     return myChart;
 }
 
@@ -309,7 +309,7 @@ function createPetFoodChart() {
         ],
         datasets: [{
             label: 'My First Dataset',
-            data: [52, 48],
+            data: [29, 27],
             backgroundColor: [
                 '#abd037',
                 '#e6e7e8',
