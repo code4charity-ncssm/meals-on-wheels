@@ -173,6 +173,68 @@ function createPetChart() {
     return myChart;
 }
 
+function create10Chart() {
+    const q29Chart = document.getElementById("q10-12");
+
+
+    const data = {
+        labels: [
+            'Yes',
+            'No',
+        ],
+        datasets: [{
+            label: 'My First Dataset',
+            data: [94.55, 5.45],
+            backgroundColor: [
+                '#abd037',
+                '#e6e7e8',
+            ],
+            hoverOffset: 4
+        }]
+    };
+
+
+    const q29Config = {
+        type: 'doughnut',
+        data: data,
+    };
+
+
+    const myChart = new Chart(q29Chart, q29Config);
+    return myChart;
+
+}
+
+function create17Chart() {
+    const q29Chart = document.getElementById("q17");
+
+    const data = {
+        labels: [
+            'Yes',
+            'No',
+        ],
+        datasets: [{
+            label: 'My First Dataset',
+            data: [99.61, 0.39],
+            backgroundColor: [
+                '#abd037',
+                '#e6e7e8',
+            ],
+            hoverOffset: 4
+        }]
+    };
+
+
+    const q29Config = {
+        type: 'doughnut',
+        data: data,
+    };
+
+
+    const myChart = new Chart(q29Chart, q29Config);
+    return myChart;
+}
+
 function createPetFoodChart() {
     const petFoodChart = document.getElementById("petfeeding");
 
@@ -192,12 +254,10 @@ function createPetFoodChart() {
         }]
     };
 
-
     const petFoodConfig = {
         type: 'doughnut',
         data: data,
     };
-
 
     const myChart = new Chart(petFoodChart, petFoodConfig);
     return myChart;
@@ -212,6 +272,8 @@ create46Chart();
 create30Chart();
 typeHealth();
 create29Chart();
+create10Chart();
+create17Chart();
 
 
 
