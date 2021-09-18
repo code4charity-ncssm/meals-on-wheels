@@ -143,7 +143,7 @@ function createPetChart() {
     const q46Data = {
         labels: ["Dog", "Cat", "Other"],
         datasets: [{
-            label: 'TITLE',
+            label: 'Pets',
             data: [36, 27, 5],
             minBarLength: 100,
             backgroundColor: [
@@ -172,7 +172,6 @@ function createPetChart() {
     const myChart = new Chart(q46Chart, q46Config);
     return myChart;
 }
-
 
 function create10Chart() {
     const q29Chart = document.getElementById("q10-12");
@@ -209,7 +208,6 @@ function create10Chart() {
 function create17Chart() {
     const q29Chart = document.getElementById("q17");
 
-
     const data = {
         labels: [
             'Yes',
@@ -235,11 +233,40 @@ function create17Chart() {
 
     const myChart = new Chart(q29Chart, q29Config);
     return myChart;
+}
+
+function createPetFoodChart() {
+    const petFoodChart = document.getElementById("petfeeding");
+
+    const data = {
+        labels: [
+            'Yes',
+            'No',
+        ],
+        datasets: [{
+            label: 'My First Dataset',
+            data: [52, 48],
+            backgroundColor: [
+                '#abd037',
+                '#e6e7e8',
+            ],
+            hoverOffset: 4
+        }]
+    };
+
+    const petFoodConfig = {
+        type: 'doughnut',
+        data: data,
+    };
+
+    const myChart = new Chart(petFoodChart, petFoodConfig);
+    return myChart;
 
 }
 
 
 createPetChart();
+createPetFoodChart();
 create32Chart();
 create46Chart();
 create30Chart();
