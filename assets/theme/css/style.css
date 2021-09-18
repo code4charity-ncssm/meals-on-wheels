@@ -1020,3 +1020,11 @@ blockquote {
 .item-subtitle {
   margin-top: 1rem !important;
 }
+
+.f {
+  border: 2px solid red;
+}
+
+.grey-bkg {
+  background-color: #FAFAFA !important;
+}
