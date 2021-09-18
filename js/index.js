@@ -204,6 +204,71 @@ function create10Chart() {
 
 }
 
+function create3Chart() {
+    const q29Chart = document.getElementById("q3");
+
+
+    const data = {
+        labels: [
+            'Yes',
+            'No',
+        ],
+        datasets: [{
+            label: 'My First Dataset',
+            data: [202, 56],
+            backgroundColor: [
+                '#abd037',
+                '#e6e7e8',
+            ],
+            hoverOffset: 4
+        }]
+    };
+
+
+    const q29Config = {
+        type: 'doughnut',
+        data: data,
+    };
+
+
+    const myChart = new Chart(q29Chart, q29Config);
+    return myChart;
+
+}
+
+function create7Chart() {
+    const q29Chart = document.getElementById("q7");
+
+
+    const data = {
+        labels: [
+            'Yes',
+            'No',
+        ],
+        datasets: [{
+            label: 'My First Dataset',
+            data: [29, 230],
+            backgroundColor: [
+                '#abd037',
+                '#e6e7e8',
+            ],
+            hoverOffset: 4
+        }]
+    };
+
+
+    const q29Config = {
+        type: 'doughnut',
+        data: data,
+    };
+
+
+    const myChart = new Chart(q29Chart, q29Config);
+    return myChart;
+
+}
+
+
 function create17Chart() {
     const q29Chart = document.getElementById("q17");
 
@@ -271,6 +336,8 @@ createPetFoodChart();
 create32Chart();
 create46Chart();
 create30Chart();
+create3Chart();
+create7Chart();
 
 // Must be last due to blocking function
 typeHealth();
