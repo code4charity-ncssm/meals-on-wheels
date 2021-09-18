@@ -103,7 +103,6 @@ function create29Chart() {
 
 }
 
-
 function create30Chart() {
     const q29Chart = document.getElementById("q30");
 
@@ -264,16 +263,17 @@ function createPetFoodChart() {
 
 }
 
-
+create29Chart();
+create10Chart();
+create17Chart();
 createPetChart();
 createPetFoodChart();
 create32Chart();
 create46Chart();
 create30Chart();
+
+// Must be last due to blocking function
 typeHealth();
-create29Chart();
-create10Chart();
-create17Chart();
 
 
 
