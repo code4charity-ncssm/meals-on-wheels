@@ -118,6 +118,11 @@ section .mbr-background-video-preview {
   visibility: hidden;
 }
 
+.navbar-logo {
+  max-height: 60px !important; 
+  margin: 1rem 0;
+}
+
 .mbr-z-index20 {
   z-index: 20;
 }
@@ -1010,4 +1015,8 @@ blockquote {
 .arrow:nth-child(3) {
   opacity: 0.9;
   top: 90%;
+}
+
+.item-subtitle {
+  margin-top: 1rem !important;
 }
