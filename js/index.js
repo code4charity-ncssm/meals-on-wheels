@@ -9,7 +9,7 @@ function create32Chart() {
             backgroundColor: [
                 '#00b7c4',
                 '#abd037',
-                '#003851',
+                '#d88d3a',
             ],
             borderWidth: 1
         }]
@@ -84,8 +84,8 @@ function create29Chart() {
         datasets: [{
             data: [86, 158],
             backgroundColor: [
-                '#abd037',
-                '#edc819',
+                '#00b7c4',
+                '#d88d3a',
             ],
             hoverOffset: 4
         }]
@@ -117,7 +117,7 @@ function create30Chart() {
             data: [119, 65],
             backgroundColor: [
                 '#abd037',
-                '#e6e7e8',
+                '#f04925',
             ],
             hoverOffset: 4
         }]
@@ -186,7 +186,7 @@ function create10Chart() {
             data: [243, 14],
             backgroundColor: [
                 '#abd037',
-                '#e6e7e8',
+                '#f04925',
             ],
             hoverOffset: 4
         }]
@@ -217,8 +217,8 @@ function create3Chart() {
             label: 'My First Dataset',
             data: [202, 56],
             backgroundColor: [
-                '#abd037',
-                '#e6e7e8',
+                '#ba347c',
+                '#edc819',
             ],
             hoverOffset: 4
         }]
@@ -249,8 +249,8 @@ function create7Chart() {
             label: 'My First Dataset',
             data: [29, 230],
             backgroundColor: [
-                '#abd037',
-                '#e6e7e8',
+                '#00b7c4',
+                '#d88d3a',
             ],
             hoverOffset: 4
         }]
@@ -281,8 +281,8 @@ function create17Chart() {
             label: 'My First Dataset',
             data: [256, 1],
             backgroundColor: [
-                '#abd037',
-                '#e6e7e8',
+                '#ba347c',
+                '#edc819',
             ],
             hoverOffset: 4
         }]
@@ -312,7 +312,7 @@ function createPetFoodChart() {
             data: [29, 27],
             backgroundColor: [
                 '#abd037',
-                '#e6e7e8',
+                '#f04925',
             ],
             hoverOffset: 4
         }]
