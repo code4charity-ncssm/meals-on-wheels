@@ -328,6 +328,43 @@ function createPetFoodChart() {
 
 }
 
+
+function createEthChart() {
+    const ethChart = document.getElementById("ethChart");
+
+    const data = {
+        labels: [
+            'Black or African American',
+            'White',
+            'Hispanic or Latinx',
+            'Asian',
+            'Multi-Racial',
+        ],
+        datasets: [{
+            label: 'My First Dataset',
+            data: [65, 23, 3, 1, 1],
+            backgroundColor: [
+                '#003851',
+                '#00b7c4',
+                '#abd037',
+                '#edc819',
+                '#f04925'
+            ],
+            hoverOffset: 4
+        }]
+    };
+
+
+    const ethConfig = {
+        type: 'doughnut',
+        data: data,
+    };
+
+
+    const myChart = new Chart(ethChart, ethConfig);
+    return myChart;
+}
+
 create29Chart();
 create10Chart();
 create17Chart();
@@ -338,6 +375,7 @@ create46Chart();
 create30Chart();
 create3Chart();
 create7Chart();
+createEthChart();
 
 // Must be last due to blocking function
 typeHealth();
