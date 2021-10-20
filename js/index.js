@@ -206,7 +206,7 @@ function create10Chart() {
 
 function create3Chart() {
     const q3Chart = document.getElementById("q3");
-
+    console.log("q3called");
 
     const data = {
         labels: [
@@ -365,14 +365,14 @@ function createEthChart() {
     return myChart;
 }
 
-create29Chart();
+// create29Chart();
 create10Chart();
 create17Chart();
 createPetChart();
 createPetFoodChart();
 create32Chart();
 create46Chart();
-create30Chart();
+// create30Chart();
 create3Chart();
 create7Chart();
 createEthChart();
