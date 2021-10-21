@@ -1944,3 +1944,7 @@ a {
 .bold {
   font-weight: bold;
 }
+
+.w-50px {
+  max-width: 100px;
+}
