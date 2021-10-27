@@ -1953,3 +1953,7 @@ a {
  /* remove bullet point icons */
   list-style-type: none;
 }
+
+.blue {
+  color: #02B7C4;
+}
