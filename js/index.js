@@ -366,8 +366,8 @@ function createEthChart() {
 }
 
 // create29Chart();
-create10Chart();
-create17Chart();
+// create10Chart();
+// create17Chart();
 createPetChart();
 createPetFoodChart();
 create32Chart();
