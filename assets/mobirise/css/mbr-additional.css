@@ -1948,3 +1948,8 @@ a {
 .w-50px {
   max-width: 100px;
 }
+
+#healthType {
+ /* remove bullet point icons */
+  list-style-type: none;
+}
