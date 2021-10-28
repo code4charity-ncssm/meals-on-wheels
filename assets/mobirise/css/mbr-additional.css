@@ -1952,6 +1952,7 @@ a {
 #healthType {
  /* remove bullet point icons */
   list-style-type: none;
+  margin-bottom: 4rem;
 }
 
 .blue {

@@ -76,6 +76,7 @@ function typeQuoteHealth() {
     new TypeIt("#healthQuoteType", {
         speed: 20,
         cursor: false,
+        waitUntilVisible: true,
     })
         .go();
 
@@ -403,6 +404,8 @@ const intterval = setInterval(() => {
     }
 }, 500);
 
+
+
 function createOverallHealthChart() {
     const overallHealthChart = document.getElementById("overallHealth");
 
@@ -443,15 +446,12 @@ function createOverallHealthChart() {
 }
 
 
-// create29Chart();
-// create10Chart();
-// create17Chart();
+
 createPetChart();
 createPetFoodChart();
 create32Chart();
 create46Chart();
-// create30Chart();
-create3Chart();
+// create3Chart();
 create7Chart();
 createEthChart();
 createOverallHealthChart();
