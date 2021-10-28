@@ -72,6 +72,14 @@ function typeHealth() {
 
 }
 
+function typeQuoteHealth() {
+    new TypeIt("#healthQuoteType", {
+        speed: 20,
+        cursor: false,
+    })
+        .go();
+
+}
 function create29Chart() {
     const q29Chart = document.getElementById("q29");
 
@@ -436,8 +444,8 @@ function createOverallHealthChart() {
 
 
 // create29Chart();
-create10Chart();
-create17Chart();
+// create10Chart();
+// create17Chart();
 createPetChart();
 createPetFoodChart();
 create32Chart();
@@ -449,6 +457,7 @@ createEthChart();
 createOverallHealthChart();
 // Must be last due to blocking function
 typeHealth();
+typeQuoteHealth();
 
 
 
