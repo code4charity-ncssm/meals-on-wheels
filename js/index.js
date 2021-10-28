@@ -373,6 +373,76 @@ function createEthChart() {
     return myChart;
 }
 
+
+function animateValue(id, start, end, duration, unit) {
+    if (start === end) return;
+    var range = end - start;
+    var current = start;
+    var increment = end > start ? 1 : -1;
+    var stepTime = Math.abs(Math.floor(duration / range));
+    var obj = document.getElementById(id);
+    var timer = setInterval(function () {
+        current += increment;
+        obj.innerHTML = `<strong>${current} ${unit}</strong>`;
+
+        if (current == end) {
+            clearInterval(timer);
+        }
+    }, stepTime);
+}
+
+const intterval = setInterval(() => {
+    if ($('#saferPercent').visible(true)) {
+        // The element is visible, do something
+        animateValue("saferPercent", 50, 93, 2000, "%");
+        console.log("bruh");
+        clearInterval(intterval);
+    } else {
+        // The element is NOT visible, do something else
+
+    }
+}, 500);
+
+function createOverallHealthChart() {
+    const overallHealthChart = document.getElementById("overallHealth");
+
+
+    const data = {
+        labels: ["less than 1 year", "1-5 years", "11+ years"],
+        datasets: [{
+            label: '% of respondents agreeing',
+            data: [81, 91, 100],
+            backgroundColor: [
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(255, 159, 64, 0.2)',
+                'rgba(255, 205, 86, 0.2)',
+            ],
+            borderColor: [
+                'rgb(255, 99, 132)',
+                'rgb(255, 159, 64)',
+                'rgb(255, 205, 86)',
+            ],
+            borderWidth: 1
+        }]
+    };
+
+    const config = {
+        type: 'bar',
+        data: data,
+        options: {
+            scales: {
+                y: {
+                    beginAtZero: true
+                }
+            }
+        },
+    };
+
+    const myChart = new Chart(overallHealthChart, config);
+    return myChart;
+}
+
+
 // create29Chart();
 // create10Chart();
 // create17Chart();
@@ -384,7 +454,7 @@ create46Chart();
 create3Chart();
 create7Chart();
 createEthChart();
-
+createOverallHealthChart();
 // Must be last due to blocking function
 typeHealth();
 typeQuoteHealth();
