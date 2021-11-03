@@ -418,15 +418,15 @@ function createOverallHealthChart() {
             label: '% of respondents agreeing',
             data: [81, 91, 100],
             backgroundColor: [
-                'rgba(255, 99, 132, 0.2)',
-                'rgba(255, 159, 64, 0.2)',
-                'rgba(255, 205, 86, 0.2)',
+                'rgba(255, 99, 132)',
+                'rgba(255, 159, 64)',
+                'rgba(4, 166, 178)',
             ],
-            borderColor: [
-                'rgb(255, 99, 132)',
-                'rgb(255, 159, 64)',
-                'rgb(255, 205, 86)',
-            ],
+            // borderColor: [
+            //     'rgb(255, 99, 132)',
+            //     'rgb(255, 159, 64)',
+            //     'rgb(4, 166, 178)',
+            // ],
             borderWidth: 1
         }]
     };
@@ -435,11 +435,7 @@ function createOverallHealthChart() {
         type: 'bar',
         data: data,
         options: {
-            scales: {
-                y: {
-                    beginAtZero: true
-                }
-            }
+            indexAxis: 'y',
         },
     };
 
