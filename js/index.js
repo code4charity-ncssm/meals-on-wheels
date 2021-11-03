@@ -258,8 +258,8 @@ function create7Chart() {
             label: 'My First Dataset',
             data: [29, 230],
             backgroundColor: [
-                '#00b7c4',
-                '#d88d3a',
+                '#02B7C4',
+                '#ABD037',
             ],
             hoverOffset: 4
         }]
@@ -315,13 +315,15 @@ function createPetFoodChart() {
         labels: [
             'Yes',
             'No',
+
         ],
         datasets: [{
             label: 'My First Dataset',
             data: [29, 27],
             backgroundColor: [
-                '#abd037',
-                '#f04925',
+                '#02B7C4',
+                '#ABD037',
+
             ],
             hoverOffset: 4
         }]
