@@ -135,6 +135,48 @@ function create30Chart() {
 
 }
 
+function createByTheNumbersChart() {
+    const numChart = document.getElementById('bythenumbers');
+
+    const numData = {
+        labels: ["Nutritional Shakes", "Holiday Gifts", "Holiday Meals", "Box Fans Distributed in Summer", "Laptops", "Masks",
+        "Pillows", "Vegetable Produce Boxes"],
+        datasets: [{
+            label: 'By The Numbers',
+            data: [8441, 555, 1331, 138, 15, 1470, 72, 532],
+            minBarLength: 10,
+            backgroundColor: [
+                'rgba(255, 99, 132)',
+                'rgba(255, 159, 64)',
+                '#00b7c4',
+                '#edc819',
+                '#f04925',
+                '#ba347c',
+                '#d88d3a',
+                '#bcbec0'
+            ]
+        }]
+    };
+
+    let plugin = {
+        legend: {
+            reverse: true
+        },
+    }
+
+    const dataConfig = {
+        type: 'bar',
+        data: numData,
+        options: {
+            indexAxis: 'x',
+        },
+        plugins: [plugin]
+    };
+
+    const myChart = new Chart(numChart, dataConfig);
+    return myChart;
+}
+
 
 function createPetChart() {
     const petChart = document.getElementById('pet');
@@ -143,7 +185,7 @@ function createPetChart() {
         labels: ["Dog", "Cat", "Other"],
         datasets: [{
             label: 'Pets',
-            data: [36, 27, 5],
+            data: [81, 47, 5],
             minBarLength: 100,
             backgroundColor: [
                 'rgba(255, 99, 132)',
@@ -332,6 +374,7 @@ create29Chart();
 create10Chart();
 create17Chart();
 createPetChart();
+createByTheNumbersChart();
 createPetFoodChart();
 create32Chart();
 create46Chart();
