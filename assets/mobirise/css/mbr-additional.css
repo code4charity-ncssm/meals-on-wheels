@@ -1893,3 +1893,68 @@ a {
 .cid-sIyw9teDSe .media-container-row .row-copirayt p {
   width: 100%;
 }
+
+.item-wrapper {
+  background-color: transparent !important;
+}
+
+.top-half, .bottom-half {
+  background-color: white;
+  padding: 0 1rem 1rem 1rem;
+}
+
+.bottom-half {
+  margin-top: 1rem;
+}
+
+.profile-box {
+  background-color: #00B7C4;
+  border-radius: 20px;
+}
+
+.profile-text {
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.profile-stat {
+  font-weight: bolder;
+  font-size: 3.5rem;
+}
+
+.profile-img {
+  max-height: 80%;
+}
+
+@media (max-width: 768px) {
+  .profile-box {
+    margin-top: 1rem;
+  }
+}
+
+.bg-dk-bl {
+  background-color: #003851;
+}
+.sm-w {
+  max-width: 70%;
+  margin: 0 auto;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.w-50px {
+  max-width: 100px;
+}
+
+#healthType {
+ /* remove bullet point icons */
+  list-style-type: none;
+  margin-bottom: 4rem;
+}
+
+.blue {
+  color: #02B7C4;
+}
