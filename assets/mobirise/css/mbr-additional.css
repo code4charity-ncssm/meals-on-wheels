@@ -1958,3 +1958,13 @@ a {
 .blue {
   color: #02B7C4;
 }
+
+.circular {
+  border-radius: 99999999px;
+  height: 100px !important;
+  width: 100px !important;
+}
+
+.italic {
+  font-style: italic;
+}
