@@ -149,7 +149,7 @@ function createByTheNumbersChart() {
 
     const numData = {
         labels: ["Nutritional Shakes", "Holiday Gifts", "Holiday Meals", "Box Fans Distributed in Summer", "Laptops", "Masks",
-        "Pillows", "Vegetable Produce Boxes"],
+            "Pillows", "Vegetable Produce Boxes"],
         datasets: [{
             label: 'By The Numbers',
             data: [8441, 555, 1331, 138, 15, 1470, 72, 532],
@@ -313,10 +313,8 @@ function create7Chart() {
         data: data,
     };
 
-
     const myChart = new Chart(q7Chart, q7Config);
     return myChart;
-
 }
 
 
@@ -497,8 +495,6 @@ create7Chart();
 createEthChart();
 createOverallHealthChart();
 // Must be last due to blocking function
-typeHealth();
-typeQuoteHealth();
 
 
 
