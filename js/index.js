@@ -486,14 +486,14 @@ function createOverallHealthChart() {
 
 
 createPetChart();
-createByTheNumbersChart();
+// createByTheNumbersChart();
 createPetFoodChart();
-create32Chart();
-create46Chart();
+// create32Chart();
+// create46Chart();
 // create3Chart();
-create7Chart();
+// create7Chart();
 createEthChart();
-createOverallHealthChart();
+// createOverallHealthChart();
 // Must be last due to blocking function
 
 
